@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MobileDetailActivity"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <ImageButton
+        android:id="@+id/imvbtnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+        android:background="?android:selectableItemBackground"
+        />
+
+    <ImageView
+        android:id="@+id/imvThumbDetail"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/samsung_galaxy_a21"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:id="@+id/txtNameDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Samsung galaxy A21"
+        android:textSize="22sp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/txtPriceDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giá: 20.000.000 VNĐ"
+        android:textSize="20sp"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:id="@+id/txtCpuDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="A15 Bionic"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/txtScreenSizeDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="5.6 inch"
+            android:layout_weight="1"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:id="@+id/txtRamDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Ram: 8 GB"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/txtPinDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Pin: 5000 mAh"
+            android:layout_weight="1"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:id="@+id/txtCartDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Bộ nhớ:  256 GB"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/txtCategoryDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Mobile"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm vào giỏ hàng"
+        android:textColor="#ffffff"
+        android:backgroundTint="#754EE4"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sản phẩm cùng danh mục"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#3F51B5"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRelatedProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

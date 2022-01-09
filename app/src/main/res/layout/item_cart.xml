@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:padding="10dp"
+    android:gravity="center"
+    >
+    <ImageView
+        android:id="@+id/imvMobileCart"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:src="@drawable/samsung_galaxy_a52"
+        />
+
+    <LinearLayout
+        android:id="@+id/Decription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:weightSum="2"
+        android:paddingLeft="10dp"
+        >
+        <TextView
+            android:id="@+id/txtNameCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="I Phone 13 "
+            />
+        <TextView
+            android:id="@+id/txtPriceCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0 VND"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/txtNumCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Số lượng: 1"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/ibEditNumCart"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_edit"
+        android:background="?android:selectableItemBackground"
+        />
+
+
+    <ImageButton
+        android:id="@+id/ibDeleteCart"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_delete"
+        android:background="?android:selectableItemBackground"
+        />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibBackLogin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+            android:layout_gravity="center"
+            android:backgroundTint="#62687A"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Đăng nhập"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:textColor="#162C4A"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Chào mừng trở lại"
+        android:textColor="#606E83"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vui lòng đăng nhập để tiếp tục"
+        android:layout_marginTop="10dp"
+        android:textColor="#606E83"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/edtEmailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:hint="Địa chỉ email của bạn"
+        android:drawableStart="@drawable/ic_email"
+        android:background="@drawable/custom_edt"
+        android:drawablePadding="20dp"
+        android:padding="10dp"
+        android:textColorHint="#606E83"
+        android:textColor="#606E83"
+        android:drawableTint="#62687A"
+        />
+
+    <EditText
+        android:id="@+id/edtPassLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:hint="Mật khẩu của bạn"
+        android:drawableStart="@drawable/ic_lock"
+        android:background="@drawable/custom_edt"
+        android:drawablePadding="20dp"
+        android:padding="10dp"
+        android:textColorHint="#606E83"
+        android:textColor="#606E83"
+        android:inputType="textPassword"
+        android:drawableTint="#62687A"
+        />
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_gravity="right"-->
+<!--        android:text="Quên mật khẩu?"-->
+<!--        android:textColor="#606E83"-->
+<!--        android:textSize="16dp"-->
+<!--        android:textStyle="bold"-->
+<!--        />-->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:text="Đăng nhập"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+</LinearLayout>

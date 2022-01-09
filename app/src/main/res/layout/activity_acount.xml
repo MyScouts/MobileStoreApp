@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/imvBackAccount"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+            android:layout_gravity="center"
+            android:backgroundTint="#62687A"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="THÔNG TIN TÀI KHOẢN"
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:textColor="#673AB7"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtEmailAccount"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#606E83"
+        />
+
+
+    <TextView
+        android:id="@+id/txtPassAccount"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mật khẩu:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#606E83"
+        />
+
+
+
+    <TextView
+        android:id="@+id/txtDisplayNameAccount"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên hiển thị: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#606E83"
+        />
+
+
+    <Button
+        android:id="@+id/btnChangeYourInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:text="Thay đổi thông tin"
+        android:textColor="#FFFFFF"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+</LinearLayout>

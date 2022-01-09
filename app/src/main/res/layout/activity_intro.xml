@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Chào mừng đến với PHONESTORE HN"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#162C4A"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Thế giới điện thoại của bạn"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#606E83"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btnRegisterIntro"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:text="ĐĂNG KÝ"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:id="@+id/btnLoginIntro"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button_2"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="#606E83"
+        android:textSize="16sp"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+</LinearLayout>

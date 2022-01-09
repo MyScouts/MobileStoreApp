@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ffffff"
+    >
+    <ImageButton
+        android:id="@+id/imvbtnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+        android:padding="15dp"
+        android:background="?android:selectableItemBackground"
+        />
+
+    <TextView
+        android:id="@+id/txtTitleCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imvbtnBack"
+        android:gravity="center"
+        android:text="GIỎ HÀNG CỦA BẠN"
+        android:textColor="#3F51B5"
+        android:textSize="22sp"
+        />
+
+    <TextView
+        android:id="@+id/txtTotalPriceCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitleCart"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Tong tien: 0 VND"
+        android:textColor="#FF5722"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/txtNumProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTotalPriceCart"
+        android:text="Hiện có 5 sản phẩm"
+        android:textSize="18sp"
+        android:textColor="#009688"
+        android:gravity="center"
+
+        />
+
+    <ListView
+        android:id="@+id/lvCartList"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_below="@+id/txtNumProduct"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:backgroundTint="#754EE4"
+        android:text="Đặt hàng"
+        android:textColor="#ffffff"
+
+        />
+
+</RelativeLayout>
